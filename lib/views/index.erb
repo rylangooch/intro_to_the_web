@@ -1,13 +1,39 @@
 <head>
-  <title>
-    Cat photo
-  </title>
+  <title>Cat photo</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+
+    body {
+      padding: 20px;
+      font-family: 'Poiret One', cursive;
+    }
+
+    h1 {
+      margin-left: 20px;
+      font-size: 100px;
+    }
+
+    h2 {
+      margin-left: 180px;
+      font-size: 50px;
+      color: green;
+    }
+
+    #catpic {
+      border: medium solid pink;
+      border-radius: 2em;
+    }
+
+  </style>
+
 </head>
 
-<body style='border: 2px solid grey; padding: 20px; font-family: Courier'>
+<body>
 
-  <h1 style='margin-left: 20px; font-size: 100px'>Cute kitty</h1>
-  <h2 style ='margin-left: 180px; font-size: 50px; color: green'> <%= @name %> </h2>
+  <h1 style=''>Cute kitty</h1>
+  <h2> <%= @name %> </h2>
 
-  <img style='border: medium solid pink; border-radius: 2em;', src= 'http://bit.ly/1eze8aE'>
+  <img id="catpic" src= 'http://bit.ly/1eze8aE'>
 </body>
