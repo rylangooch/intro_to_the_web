@@ -11,7 +11,12 @@ get('/foo') do
   "BAR"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Yuri", "Timmy"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  @name = params[:name] + params[:age]
   erb(:index)
 end
