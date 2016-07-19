@@ -40,6 +40,15 @@
   <% end %>
   <h2> <%= @name %> </h2>
 
+<form action = '/named-cat'>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+
+<form action = './named-cat'>
+  <input type='password' name='psw'>
+</form>
 
   <img id="catpic" src= 'http://bit.ly/1eze8aE'>
 </body>
